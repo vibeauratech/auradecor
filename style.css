@@ -428,47 +428,7 @@ hr{
     
 }
 
-.vertical-line{
-    display: flex;
-    justify-content: right;
-}
-.vertical-line p{
-    float: right;
-    margin-right:100px ;
-    margin-top: -70px;
-}
-.v{
-    height: 30px;
-    border: 1px solid #ccc;
-    margin-top: -75px;
-    margin-right: 70px;
-}
 
-@media (max-width: 700px){
-    .vertical-line{
-        display: block;
-    }
-    .v{
-        height: 30px;
-        border: 1px solid #ccc;
-        margin-top: 20px;
-        margin-right: 70px;
-    }
-    .vertical-line p{
-        float: none;
-        text-align: center;
-       display: none;
-        margin-top: 30px;
-        padding-bottom: 30px;
-    }
-    .v{
-        height: 30px;
-        border: 1px solid #ccc;
-        margin-top: -75px;
-        margin-right: 70px;
-        display: none;
-    }
-}
 
 
 
