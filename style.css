@@ -331,7 +331,7 @@ button:hover{
 
 @media screen and (max-width: 768px){
     .about-area{
-        height:140vh ;
+        height:115vh ;
     }
     .container{
         width: 80%;
@@ -459,6 +459,7 @@ button:hover{
         --row-height:200px;
         width: 100%;
         margin:0;
+        margin-top: 0;
     }
 }
 
