@@ -342,7 +342,7 @@ button:hover{
 }
 @media screen and (max-width: 768px){
     .project-texts{
-        font-size: 28px;
+        font-size: 34px;
         text-align: center;
         margin-left: 0;
     }
