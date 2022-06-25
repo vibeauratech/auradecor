@@ -177,7 +177,7 @@ button:hover{
 
 @media screen and (max-width:768px) {
     header{
-        height: 120vh;
+        height: 100vh;
     }
     .hero-texts h1{
         font-size: 40px;
@@ -262,10 +262,15 @@ button:hover{
    
 }
 
+.about-area{
+    height:80vh ;
+}
+
 .about-section{
     width: 100%;
-    min-height: 60vh;
+    height: 75vh;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 .container{
     width: 80%;
@@ -275,12 +280,13 @@ button:hover{
 }
 .content-section{
     float: right;    
-    width: 45%;
-    
+    width: 45%;  
+    margin-top: 15px; 
 }
 .image-section{
     float: left;
     width: 55%;
+    padding-bottom: 18px;
 }
 
 .image-section img{
@@ -301,9 +307,32 @@ button:hover{
     font-size: 18px;
     padding: 1rem 0;
     line-height: 1.4;
+    padding-bottom: 30px;
+}
+
+.new-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgb(70, 69, 69);
+    padding: 16px 64px;
+    font-size: 14px;
+    font-weight: bold;       
+    background: rgb(70, 69, 69);
+    position: relative;
+    cursor: pointer;
+    border-radius: 1px;    
+}
+.new-btn:hover{
+    color: black;
+    background: rgb(218, 240, 219);
+    border: 1px solid rgb(218, 240, 219);
 }
 
 @media screen and (max-width: 768px){
+    .about-area{
+        height:140vh ;
+    }
     .container{
         width: 80%;
         display: block;
@@ -313,7 +342,7 @@ button:hover{
     .content-section{
         float: none;    
         width: 100%;
-        margin: auto;
+        margin: auto;   
     }
     .content-section .about-content h1{
         font-size: 26px;
@@ -326,6 +355,7 @@ button:hover{
         line-height: 1.2;
         text-align: center;
         width: 100%;
+       
     }
         
     .image-section{
@@ -343,18 +373,107 @@ button:hover{
         height: 200px;
         object-fit: cover;
     }
-    
+    .new-btn{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }   
 }
+@media screen and (min-width: 1024px){
+    .content-section{
+        float: right;    
+        width: 45%;  
+        margin-top: 15px; 
+    }
+    .image-section{
+        float: left;
+        width: 55%;
+        padding-bottom: 18px;
+    }
+    .image-section img{
+        width: 85%;
+        height: 480px;
+        object-fit: cover;
+    }
+
+}
+
+
+.project-texts{
+    font-size: 36px;
+    text-align: left;
+    margin-top: 80px;
+    margin-left: 100px;
+    padding-bottom:15px;
+}
+@media screen and (max-width: 768px){
+    .project-texts{
+        font-size: 20px;
+        text-align: center;
+        margin-left: 0;
+    }
+
+}
+
+.project-image{
+    width: 88%;
+    align-items: center;
+    --gap: 20px;
+    --num-cols: 4;
+    --row-height:250px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+    margin:0 80px;
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+.project-image > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.project-image-col-2 {
+    grid-column: span 2;
+}
+.project-image-row-2 {
+    grid-row: span 2;
+}
+
+@media screen and (max-width:1024px){
+    .project-image{
+        --num-cols: 2;
+        --row-height:200px;
+        width: 88%;
+        margin:0 60px;
+    }
+}
+@media screen and (max-width:768px){
+    .project-image{
+        --num-cols: 2;
+        --row-height:200px;
+        width: 100%;
+        margin:0;
+    }
+}
+
+
+
 
 
 footer{
     width: 100%;
     bottom: 0;
-    background: transparent;
+    background: rgb(70, 69, 69);
     padding: 100px 0 30px;
     font-size: 13px ;
     line-height: 20px;
-    margin-top: 150px;
+    margin-top: 50px;
 }
 
 .feeter-row{
@@ -368,14 +487,14 @@ footer{
 
 .feeter-logo{
     width: 80px;
-    color: black;
+    color: white;
     font-size: 18px;       
 }
 
 
 
 .col{
-    color: black;
+    color: white;
     flex-basis: 25%;
     padding: 10px;
     font-weight: 700;
@@ -386,17 +505,14 @@ footer{
     position: relative;
 }
 
-.email-id{
-    width: fit-content;
-    border-bottom: 1px solid #ccc;
-    margin: 20px 0;
-}
+
+
 .feeter-ul li{
     list-style: none;
     margin-bottom: 12px;
 }
 .feeter-ul li a{
-    color: black;
+    color:white;
     font-weight: 700;
     text-decoration: none;
 }
@@ -451,8 +567,8 @@ form button{
     text-align: center;
     line-height: 40px;
     font-size: 20px;
-    color: white;
-    background: rgb(70, 69, 69);
+    color: rgb(70, 69, 69);
+    background: white;
     margin-right: 15px;
     cursor: none;
 }
@@ -465,8 +581,8 @@ hr{
 }
 .copyright{
     text-align: center;
-    color: black;
-    padding-bottom: 50px;
+    color: white;
+    padding-bottom: 10px;
 }
 
 .underline{
@@ -504,7 +620,7 @@ hr{
 @media (max-width: 700px) {
     footer{
         bottom: unset;
-        margin-top:10px;
+         
     }
 
     .col-logo{
@@ -518,11 +634,12 @@ hr{
     .copyright{
         text-align: center;
         margin-left: 0;
-        color: black;
+        color: white;
         padding-bottom: 50px;
     }
     
 }
+
 
 
 
