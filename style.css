@@ -262,154 +262,71 @@ button:hover{
    
 }
 
-.about-area{
-    height:80vh ;
+.about-row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
 }
-
-.about-section{
-    width: 100%;
-    height: 75vh;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-.container{
+.about-us{
     width: 80%;
-    display: block;
     margin: auto;
-    padding-top: 5px;
-}
-.content-section{
-    float: right;    
-    width: 45%;  
-    margin-top: 15px; 
-}
-.image-section{
-    float: left;
-    width: 55%;
-    padding-bottom: 18px;
-}
+    padding-top: 80px;
+    padding-bottom: 50px;
 
-.image-section img{
-    width: 500px;
-    height: 400px;
-    display: block;
-    margin-top:15px ;
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.about-col img{
+    width: 100%;
     object-fit: cover;
 }
-
-
-.content-section .about-content h1{
-
-    font-size: 48px;
-    color:black;
+.about-col h1{
+    font-size: 36px;
+    padding-top: 0;
 }
-.content-section .about-content p{
-    font-size: 18px;
-    padding: 1rem 0;
-    line-height: 1.4;
-    padding-bottom: 30px;
+.about-col p{
+    padding: 15px 0 25px;
+    line-height: 1.8;
+    font-size: 17px;
 }
-
 .new-btn{
     display: inline-block;
     text-decoration: none;
-    color: white;
-    border: 1px solid rgb(70, 69, 69);
+    color: rgb(70, 69, 69);
+    border: 2px solid rgb(70, 69, 69);
     padding: 16px 64px;
     font-size: 14px;
     font-weight: bold;       
-    background: rgb(70, 69, 69);
+    background: transparent;
     position: relative;
     cursor: pointer;
     border-radius: 1px;    
 }
 .new-btn:hover{
-    color: black;
-    background: rgb(218, 240, 219);
-    border: 1px solid rgb(218, 240, 219);
+    color: white;
+    background: rgb(70, 69, 69);
+    border: 1px solid rgb(70, 69, 69);
 }
-
-@media screen and (max-width: 768px){
-    .about-area{
-        height:115vh ;
-    }
-    .container{
-        width: 80%;
-        display: block;
-        margin: auto;
-        padding-top: 1px;
-    }
-    .content-section{
-        float: none;    
-        width: 100%;
-        margin: auto;   
-    }
-    .content-section .about-content h1{
-        font-size: 26px;
+@media(max-width: 700px){
+    .about-row{
+        flex-direction: column;
         text-align: center;
-        margin-top: 30px;
     }
-    .content-section .about-content p{
-        font-size: 17px;
-        padding: 1rem 0;
-        line-height: 1.2;
-        text-align: center;
-        width: 100%;
-       
-    }
-        
-    .image-section{
-        float: none;    
-        width: 100%;
-        display: block;
-        margin: auto;
-        margin-top: 25px;        
-    }
-    .content-section .about-content .read-btn{  
-         margin:  0 70px;           
-    }
-    .image-section img{
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-    }
-    .new-btn{
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-    }   
-}
-@media screen and (min-width: 1024px){
-    .content-section{
-        float: right;    
-        width: 45%;  
-        margin-top: 15px; 
-    }
-    .image-section{
-        float: left;
-        width: 55%;
-        padding-bottom: 18px;
-    }
-    .image-section img{
-        width: 85%;
-        height: 480px;
-        object-fit: cover;
-    }
-
 }
 
 
 .project-texts{
     font-size: 36px;
     text-align: left;
-    margin-top: 80px;
+    margin-top: 40px;
     margin-left: 100px;
     padding-bottom:15px;
 }
 @media screen and (max-width: 768px){
     .project-texts{
-        font-size: 20px;
+        font-size: 28px;
         text-align: center;
         margin-left: 0;
     }
