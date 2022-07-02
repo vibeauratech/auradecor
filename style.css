@@ -177,7 +177,7 @@ button{
 }
 
 span{
-    background:#86b300;
+    background:rgb(28, 175, 106);
     height: 100%;
     width: 0;
     border-radius: 25px;
@@ -269,7 +269,7 @@ button:hover{
         margin: 14px 7px;
         border-radius: 25px;
         font-weight: bold;
-        border: 2px solid #86b300;
+        border: 2px solid rgb(28, 175, 106);
         background: transparent;
         color: white;
         cursor: pointer;
