@@ -9,39 +9,44 @@
     <link rel="stylesheet" href="style.css">
     
 </head>    
-<body> 
-<header>
-    <nav >
-        <input id="portfolionav-toggle" type="checkbox">
-        <a href="#" class="logo">
-            Aura<strong>decor</strong>
-        </a>    
-        <ul class="links">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Our Works</a></li>
-            <li><a href="">Contact</a></li>
-                       
-        </ul>
-        
-        <label for="portfolionav-toggle" class="portfolioicon-burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </label>
-    </nav> 
+<body  onload="slider()">
     
-    <div class="hero-texts">
-        <h1>Make Your Dream Interior A Reality</h1>
-        <p>Helping you make elegant and luxurious interiors,designed by professionals
-           internationally.
-        </p>
-        <div>
-            <button type="button"><span></span> Watch Video</button>
-            <button type="button"><span></span> Get A Quote</button>
-        </div>
+<div class="banner">
+    <div class="slider">
+        <img src="Batter.jpg" id="slideImg">
     </div>
-</header>
+    <div class="overlay">
+        <nav >
+            <input id="portfolionav-toggle" type="checkbox">
+            <a href="#" class="logo">
+                Aura<strong>decor</strong>
+            </a>    
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="contact us.html">Contact</a></li>                         
+            </ul>
+            
+            <label for="portfolionav-toggle" class="portfolioicon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </nav> 
+        <div class="hero-texts">
+            <h1>Make Your Dream Interior A Reality</h1>
+            <p>Helping you make elegant and luxurious interiors,designed by professionals
+               internationally.
+            </p>
+            <div>
+                <button type="button"><span></span> Watch Video</button>
+                <button type="button"><span></span> Get A Quote</button>
+            </div>
+        </div>            
+    </div>
+</div>
+   
 
 <section class="about-us">
     <div class="about-row">
@@ -76,43 +81,7 @@
     <img src="9.jpg">
 </div>
 
-<section class="testimonial">
-    <h1>What our clients say.</h1>
-    <p>Clients reviews and impressions</p>
 
-    <div class="about-row">
-        <div class="testimonial-col">
-            <img src="jenny.jpg">
-            <div>
-                <p>I was left in awe with auradecor concepts and how diligent the team was
-                    throughout the entire process. I recommend 100%.
-                </p>
-                <h3>Destiny Akharia</h3>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-            </div>
-        </div>
-        <div class="testimonial-col">
-            <img src="frances.jpg">
-            <div>
-                <p> Beautiful, creative, minimal and yet elegant. I was impressed by what the 
-                    team came up with, with very little time to spend. 
-                </p>
-                <h3>Frances Praise</h3>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star-half-stroke"></i>
-            </div>
-        </div>
-
-    </div>
-
-</section>
 
 
 <footer id="contact">
@@ -157,6 +126,30 @@
     
 </footer>
 
+<script>
+    var slideImg = document.getElementById("slideImg");
+
+    var images = new Array(
+        "images/Batter.jpg",
+        "images/dark-wall-empty-room-with-plants-floor-3d-rendering.jpg",
+        "images/green-wall-mockup-with-green-plant-shelf3d-rendering.jpg"        
+     );
+    
+
+    var len = images.length;
+    var i = 0
+
+    function slider(){
+        if (i > len-1) {
+            i = 0
+        }
+        slideImg.src = images[i];
+        i++;
+        setTimeout('slider()',3000);
+    }           
+    
+
+</script>
 
  
 
