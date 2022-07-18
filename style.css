@@ -249,11 +249,11 @@ nav .portfolioicon-burger .line{
 
     }
       
-    .hero-texts h1{
+    .overlay h1{
         font-size: 32px;
         margin-top: 100px;
     }
-    .hero-texts p{
+    .overlay p{
         font-size: 16px;
         width: 90%;
         font-weight: 200;
