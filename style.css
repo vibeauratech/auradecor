@@ -235,7 +235,7 @@ nav ul li a{
 @media screen and (max-width:990px){
     .preload-con span{
         left: 50%;
-        top: 90%;
+        top: 80%;
         position: absolute;
     }
 
