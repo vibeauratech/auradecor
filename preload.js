@@ -21,7 +21,7 @@ gsap.from(".asset", 1.2, {
 
 
 gsap.to(".preloader", 1.5, {
-    top: "-100%",
+    top: "-150%",
     ease :" power4.inOut",
     delay: 7.2
 })
