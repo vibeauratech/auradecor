@@ -350,6 +350,12 @@ nav ul li a{
         margin-right: 15px;
     }
 
+    .desc-img{
+        flex-basis: 47%; 
+        height: auto;
+        overflow: hidden;
+    }
+
     .desc-box{
         text-align: center;
     }
