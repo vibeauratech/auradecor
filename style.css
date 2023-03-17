@@ -229,6 +229,7 @@ nav ul li a{
 .hero-right img{
     width: 100%;
     margin-left: 20px;
+    overflow: hidden;
 }
 
 
@@ -281,8 +282,6 @@ nav ul li a{
     .app button:last-child{
         margin-right: 15px; 
     }
-
-    
     
     .hero-right {
         flex-basis: 100%;
@@ -328,20 +327,18 @@ nav ul li a{
 
 
 .desc-img{
-    flex-basis: 47%; 
-    height: 130vh;
     overflow: hidden;
+    flex-basis: 47%; 
 }
 
 .desc-img img{
     width: 100%;
-    margin-left: 35px;
+    margin-left: 30px;
 }
 
 @media screen and (max-width:990px){
   .desc{
      flex-direction: column;
-     margin-top: 25%;
   }  
 
     .app button{
@@ -351,12 +348,16 @@ nav ul li a{
     }
 
     .desc-img{
-        flex-basis: 47%; 
-        height: auto;
-        overflow: hidden;
+        flex-basis: 100%; 
     }
 
+    .desc-img img{
+        margin-top: 50px;
+    }
+    
+
     .desc-box{
+        flex-basis: 100%;
         text-align: center;
     }
 
@@ -378,7 +379,7 @@ nav ul li a{
 .setup{
     width: 90%;
     margin: 0 auto;
-    margin-top: 10%;
+    margin-top: 20px;
 }
 
 .setup-head{
@@ -404,13 +405,22 @@ nav ul li a{
 .setup-box{
     display: flex;
     justify-content: space-between;
-    margin-top: 5%;
+    margin-top: 80px;
 }
 
 
 .setup-data{
     flex-basis: 30%;
+    position: relative;
 }
+
+
+
+.reveal img{   
+    width: 100%;
+ 
+}
+
 
 .setup-data p{
     overflow: hidden;
@@ -423,9 +433,6 @@ nav ul li a{
     font-family:'poppins-medium'; 
 }
 
-.setup-data img{
-    width: 100%;
-}
 
 
 
@@ -444,13 +451,15 @@ nav ul li a{
     }   
     .setup-data{
         flex-basis: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 60px;
     }
-
-   
 
     .setup-data p span{
         font-size: 18px;
+    }
+
+    .setup-data:last-child{
+        margin-bottom: 0; 
     }
     
 }
@@ -459,18 +468,26 @@ nav ul li a{
 .faq{
     width: 90%;
     margin: 0 auto;
-    margin-top: 10%;
+    margin-top: 180px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .faq h2{
+    color: #f8f8f8;
     font-size: 96px;
     font-family:'poppins-bold'; 
 }
 
 .faq-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(bg.png) no-repeat center;
+    background-size: cover; 
+    height: 50vh;
+    border-radius: 20px;
     flex-basis: 45%;
 }
 
@@ -507,9 +524,10 @@ nav ul li a{
 }
 
  .caret-drop p{
+    width: 80%;
     text-align: left;
     font-size: 20px;
-    font-family:'poppins-medium'; 
+    font-family:'poppins-bold'; 
  }
 
  #buyer-margin{
@@ -531,11 +549,14 @@ nav ul li a{
  @media screen and (max-width:900px){  
 
     .faq{
+        margin-top: 150px;
         flex-direction: column;
     }
 
     .faq-text{
         flex-basis: 100%;
+        display: flex;
+        justify-content: center;
     }
     
     .faq-con{
@@ -614,7 +635,7 @@ nav ul li a{
 .blog{
     width: 90%;
     margin: 0 auto;
-    margin-top: 15%;
+    margin-top: 180px;
     display: flex;
     justify-content: space-between;
 }
@@ -660,10 +681,15 @@ nav ul li a{
         flex-direction: column;
     }
 
-    .blogpost p{
-        font-size: 20px;
+    .blogpost h2{
+        font-size: 24px;
+        margin-top: 40px;
     }
     
+
+    .blogpost p{
+        font-size: 18px;
+    }
     
 }
 
@@ -673,5 +699,5 @@ nav ul li a{
 .works{
     width: 90%;
     margin: 0 auto;
-    margin-top: 15%;
+    margin-top: 180px;
 }

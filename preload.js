@@ -37,7 +37,7 @@ gsap.to("#create", 0.9, {
 gsap.to("#desc", {
     scrollTrigger :{
         trigger:"#desc",
-        toggleActions: "restart pause reverse pause " 
+        toggleActions: "restart none none none " 
       }, 
     y : "0%",
     duration : 0.9,
@@ -47,7 +47,7 @@ gsap.to("#desc", {
 gsap.to("#data", {
     scrollTrigger :{
         trigger:"#data",
-        toggleActions: "restart pause reverse pause " 
+        toggleActions: "restart none none none " 
       }, 
     y : "0%",
     duration : 0.9,
@@ -57,7 +57,7 @@ gsap.to("#data", {
 gsap.to("#datae", {
     scrollTrigger :{
         trigger:"#datae",
-        toggleActions: "restart pause reverse pause " 
+        toggleActions: "restart none none none " 
       }, 
     y : "0%",
     duration : 0.9,
@@ -67,7 +67,7 @@ gsap.to("#datae", {
 gsap.from("#success", {
     scrollTrigger :{
         trigger:"#success",
-        toggleActions: "restart pause reverse pause " 
+        toggleActions: "restart none none none " 
       }, 
       y : 90,
       opacity : 0,
@@ -78,7 +78,7 @@ gsap.from("#success", {
 gsap.to("#blog", {
     scrollTrigger :{
         trigger:"#blog",
-        toggleActions: "restart pause reverse pause " 
+        toggleActions: "restart none none none " 
       }, 
     y : "0%",
     duration : 0.9,
